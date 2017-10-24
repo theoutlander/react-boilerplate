@@ -4,7 +4,9 @@
   "description": "Basic React Boilerplate",
   "main": "dist\\index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/server --out-dir ./dist/server",
+    "server": "node ./dist/server/index.js",
+    "test": "mocha dist/server/tests/test.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/theoutlander/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/theoutlander/react-boilerplate#readme"
+  "homepage": "https://github.com/theoutlander/react-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "mocha": "^4.0.1"
+  }
 }
