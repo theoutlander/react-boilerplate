@@ -1,24 +1,40 @@
 let path = require('path');
+let nodeExternals = require('webpack-node-externals');
 
-const config = {
+const moduleObj = {
+    loaders: [
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loaders: ["babel-loader"],
+        }
+    ],
+};
+
+const client = {
     entry: {
-        'public/dist/client': './src/client/app.js',
-        'dist/server': './src/server/index.js'
+        'client': './src/client/app.js',
+    },
+    target: 'web',
+    output: {
+        filename: '[name].js',
+        path: path.resolve(__dirname, 'public/dist')
+    },
+    module: moduleObj
+};
+
+const server = {
+    entry: {
+        'server': './src/server/index.js',
+        'tests/test': './src/server/tests/test.js'
     },
     target: 'node',
     output: {
-        filename: '[name].js'
-        // path: path.resolve(__dirname, 'public/dist'),
+        filename: '[name].js',
+        path: path.resolve(__dirname, 'dist')
     },
-    module: {
-        loaders: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loaders: ["babel-loader"],
-            }
-        ],
-    },
+    module: moduleObj,
+    externals: [nodeExternals()]
 };
 
-module.exports = config;
+module.exports = [client, server];
