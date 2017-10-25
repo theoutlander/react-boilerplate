@@ -1,7 +1,7 @@
-import react, {Component} from 'react'
+import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 
-export default class App extends Component {
+class App extends Component {
     constructor(props) {
         super(props);
     }
@@ -11,4 +11,4 @@ export default class App extends Component {
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))

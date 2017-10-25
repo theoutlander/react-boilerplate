@@ -4,9 +4,11 @@
   "description": "Basic React Boilerplate",
   "main": "dist\\index.js",
   "scripts": {
-    "build": "babel src/server --out-dir ./dist/server",
-    "server": "node ./dist/server/index.js",
-    "test": "mocha dist/server/tests/test.js"
+    "build-babel": "npm run build-babel-server && npm run build-babel-client",
+    "build-babel-server": "babel src/server --out-dir ./dist",
+    "build-babel-client": "babel src/client --out-dir ./public/dist",
+    "start": "node ./dist/index.js",
+    "test": "mocha dist/tests/test.js"
   },
   "repository": {
     "type": "git",
@@ -25,11 +27,14 @@
   "dependencies": {
     "express": "^4.16.2",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "webpack": "^3.8.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "mocha": "^4.0.1"
   }
 }
