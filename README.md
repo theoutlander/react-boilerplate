@@ -1,11 +1,11 @@
 # react-boilerplate
 The Node &amp; React Ecosystem
 
-http://nick.karnik.io/the-node-and-react-ecosystem/
+http://nick.karnik.io/react-boilerplate/
 
-# TODO
-- [ ] Integrate Babel config into Webpack
-- [ ] Integrate Confit
+# IDEAS FOR EXTENDING THIS TUTORIAL
+- [ ] Redux
+- [ ] StandardJS
+- [ ] Confit
 - [ ] Data Models / folder structure
-- [ ] Additional details explaining the building blocks
-- [ ]
+- [ ] Replace Mocha with Jest
