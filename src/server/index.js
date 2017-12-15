@@ -1,6 +1,6 @@
-import server from './server'
+import server from './web.server'
 
-let webserver = new server();
+let webserver = new server()
 webserver.start(() => {
-    console.log('Webserver started!')
-});
+  console.log('Webserver started!')
+})
