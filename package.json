@@ -2,7 +2,7 @@
   "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "Basic React Boilerplate",
-  "main": "dist\\index.js",
+  "main": "./dist/server.js",
   "scripts": {
     "build": "webpack",
     "build-babel": "npm run build-babel-server && npm run build-babel-client",
