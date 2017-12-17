@@ -8,6 +8,7 @@
     "build-babel": "npm run build-babel-server && npm run build-babel-client",
     "build-babel-server": "babel src/server --out-dir ./dist",
     "build-babel-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "clean": "rimraf dist node_modules",
     "start": "node ./dist/server.js",
     "test": "jest ./src"
   },
@@ -45,6 +46,8 @@
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./src/enzyme.setup.js",
-    "setupFiles": ["raf/polyfill"]
+    "setupFiles": [
+      "raf/polyfill"
+    ]
   }
 }
