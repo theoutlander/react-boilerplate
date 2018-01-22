@@ -1,7 +1,8 @@
 # react-boilerplate
-Reac Boilerplate
+React Boilerplate
 
 http://nick.karnik.io/react-boilerplate/
+https://dev.to/theoutlander/build-your-own-react-boilerplate-4b8l
 
 # SETUP
 
@@ -10,10 +11,3 @@ git clone https://github.com/theoutlander/react-boilerplate.git
 cd react-boilerplate
 
 npm install
-
-# Additional Ideas
-- [ ] Redux
-- [ ] StandardJS
-- [ ] Confit
-- [ ] Data Models / folder structure
-- [ ] Replace Mocha with Jest
