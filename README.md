@@ -2,6 +2,7 @@
 React Boilerplate
 
 http://nick.karnik.io/react-boilerplate/
+
 https://dev.to/theoutlander/build-your-own-react-boilerplate-4b8l
 
 # SETUP
