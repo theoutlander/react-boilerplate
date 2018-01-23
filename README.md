@@ -1,7 +1,7 @@
 # react-boilerplate
 React Boilerplate
 
-http://nick.karnik.io/react-boilerplate/
+http://nick.karnik.io/build-your-own-react-boilerplate/
 
 https://dev.to/theoutlander/build-your-own-react-boilerplate-4b8l
 
