@@ -1,4 +1,4 @@
-import server from './web.server'
+let server = require('./web.server')
 
 let webserver = new server()
 webserver.start(() => {

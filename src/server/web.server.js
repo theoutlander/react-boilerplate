@@ -1,6 +1,6 @@
-let express = require('express')
+let express =require('express')
 
-export default class WebServer {
+module.exports = class WebServer {
   constructor () {
     this.app = express()
     this.app.use(express.static('dist/public'))
